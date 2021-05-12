@@ -1,4 +1,4 @@
-package com.crucosoft.mixed;
+package com.crucosoft.mixed.java;
 
 public class Main {
 

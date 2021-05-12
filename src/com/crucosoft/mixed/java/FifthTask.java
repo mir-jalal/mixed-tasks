@@ -1,4 +1,4 @@
-package com.crucosoft.mixed;
+package com.crucosoft.mixed.java;
 
 import java.math.BigDecimal;
 import java.math.MathContext;

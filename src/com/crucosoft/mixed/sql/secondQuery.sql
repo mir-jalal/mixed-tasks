@@ -1,0 +1,92 @@
+-- POSTGRESQL
+-- ADD COURSES
+INSERT INTO java_backend_course.public.courses(name) VALUES ('Backend Programming');
+INSERT INTO java_backend_course.public.courses(name) VALUES ('Frontend Programming');
+INSERT INTO java_backend_course.public.courses(name) VALUES ('DevOps Fundamentals');
+INSERT INTO java_backend_course.public.courses(name) VALUES ('Mobile Development');
+INSERT INTO java_backend_course.public.courses(name) VALUES ('Machine Learning');
+INSERT INTO java_backend_course.public.courses(name) VALUES ('Cyber Security');
+
+-- ADD ASSIGNMENTS
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Algorithms', 1);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Linux', 6);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('HTML, CSS', 2);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Java Web', 1);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Android', 4);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Mathematics', 5);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Micro Services', 3);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Javascript', 2);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Spring', 1);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('iOS', 4);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Network', 6);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Artificial Intelligence', 5);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Docker', 3);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('React.js', 2);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Hybrid', 4);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Neural Networks', 5);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Rest', 1);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Security', 6);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Kubernetes', 3);
+INSERT INTO java_backend_course.public.assignments(name, course_id) VALUES ('Learning', 5);
+
+-- ADD TEACHERS
+INSERT INTO java_backend_course.public.teachers(name, surname, course_id) VALUES ('Samir', 'Aghjayev', 1);
+INSERT INTO java_backend_course.public.teachers(name, surname, course_id) VALUES ('Vahid', 'Qasimov', 2);
+INSERT INTO java_backend_course.public.teachers(name, surname, course_id) VALUES ('Efkan', 'Isazade', 3);
+INSERT INTO java_backend_course.public.teachers(name, surname, course_id) VALUES ('Niyazi', 'Qasimov', 4);
+INSERT INTO java_backend_course.public.teachers(name, surname, course_id) VALUES ('Adil', 'Shirinov', 5);
+INSERT INTO java_backend_course.public.teachers(name, surname, course_id) VALUES ('Aydin', 'Qurbanli', 6);
+
+-- ADD STUDENTS
+-- You might need SET datestyle = "ISO, YMD";
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Mir Jalal', 'Hashimli', '+994506922838', 'mircelal99@gmail.com', DATE '1999/02/23', 3, 3, 19) ;
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('James', 'Smith', '+574374037', 'sjames@mail.ru', DATE '1977-12-01', 3, 3, 12);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Mary', 'Jones', '+152579097', 'jmary@outlook.com', DATE '1979-03-27', 2, 2, 2);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Robert', 'Taylor', '+639952902', 'trobert@mail.ru', DATE '1981-11-25', 6, 6, 1);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Patricia', 'Brown', '+597848808', 'bpatricia@yahoo.com', DATE '1984-01-11', 1, 1, 16);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('John', 'Williams', '+492800407', 'wjohn@gmail.com', DATE '1985-08-09', 1, 1, 16);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Jennifer', 'Wilson', '+665798190', 'wjennifer@gmail.com', DATE '1999-03-30', 3, 3, 12);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Michael', 'Johnson', '+447276222', 'jmichael@gmail.com', DATE '2001-04-01', 5, 5, 15);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Linda', 'Davies', '+945502611', 'dlinda@outlook.com', DATE '1986-02-10', 4, 4, 14);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('William', 'Patel', '+161248659', 'pwilliam@gmail.com', DATE '1990-12-25', 6, 6, 10);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Elizabeth', 'Robinson', '+660653056', 'relizabeth@outlook.com', DATE '1991-01-26', 1, 1, 3);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('David', 'Wright', '+717101851', 'wdavid@mail.ru', DATE '2000-06-19', 5, 5, 5);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Barbara', 'Thompson', '+881516745', 'tbarbara@yahoo.com', DATE '2001-02-27', 3, 3, 6);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Richard', 'Evans', '+666497743', 'erichard@mail.ru', DATE '1976-04-15', 6, 6, 10);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Susan', 'Walker', '+844954026', 'wsusan@gmail.com', DATE '1977-06-25', 4, 4, 14);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Joseph', 'White', '+723772826', 'wjoseph@mail.ru', DATE '1978-04-24', 6, 6, 17);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Jessica', 'Roberts', '+356121216', 'rjessica@outlook.com', DATE '1979-01-29', 4, 4, 9);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Thomas', 'Green', '+816908687', 'gthomas@mail.ru', DATE '1999-10-10', 4, 4, 4);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Sarah', 'Hall', '+303338649', 'hsarah@gmail.com', DATE '2002-04-06', 6, 6, 10);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Charles', 'Thomas', '+642686490', 'tcharles@yahoo.com', DATE '1976-07-02', 5, 5, 19);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Karen', 'Clarke', '+471102789', 'ckaren@mail.ru', DATE '1976-08-01', 4, 4, 14);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Christopher', 'Jackson', '+318880075', 'jchristopher@yahoo.com', DATE '1977-10-04', 5, 5, 15);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Nancy', 'Wood', '+300834387', 'wnancy@yahoo.com', DATE '1988-06-11', 2, 2, 13);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Daniel', 'Harris', '+383514979', 'hdaniel@outlook.com', DATE '1990-03-08', 4, 4, 14);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Lisa', 'Edwards', '+899876618', 'elisa@yahoo.com', DATE '1995-03-22', 1, 1, 8);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Matthew', 'Turner', '+442134427', 'tmatthew@outlook.com', DATE '1996-01-02', 6, 6, 1);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Betty', 'Martin', '+232422077', 'mbetty@outlook.com', DATE '1996-04-10', 4, 4, 14);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Anthony', 'Cooper', '+519147285', 'canthony@yahoo.com', DATE '1975-02-02', 5, 5, 5);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Margaret', 'Hill', '+987585367', 'hmargaret@gmail.com', DATE '1978-10-07', 6, 6, 17);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Mark', 'Ward', '+230246013', 'wmark@outlook.com', DATE '1984-07-26', 1, 1, 3);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Sandra', 'Hughes', '+938715854', 'hsandra@yahoo.com', DATE '1985-08-08', 2, 2, 2);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Donald', 'Moore', '+144145787', 'mdonald@yahoo.com', DATE '1985-12-11', 5, 5, 11);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Ashley', 'Clark', '+985038934', 'cashley@mail.ru', DATE '1991-06-18', 4, 4, 4);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Steven', 'King', '+314480501', 'ksteven@outlook.com', DATE '1995-12-14', 2, 2, 13);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Kimberly', 'Harrison', '+475403105', 'hkimberly@outlook.com', DATE '1996-03-20', 5, 5, 11);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Paul', 'Lewis', '+111278777', 'lpaul@yahoo.com', DATE '1999-10-04', 5, 5, 19);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Emily', 'Baker', '+835880498', 'bemily@yahoo.com', DATE '1976-12-16', 5, 5, 19);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Andrew', 'Lee', '+613859039', 'landrew@mail.ru', DATE '1978-10-10', 5, 5, 19);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Donna', 'Allen', '+120287380', 'adonna@gmail.com', DATE '1982-04-15', 3, 3, 12);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Joshua', 'Morris', '+915970894', 'mjoshua@outlook.com', DATE '1983-12-23', 5, 5, 11);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Michelle', 'Khan', '+719466947', 'kmichelle@mail.ru', DATE '1992-06-25', 1, 1, 16);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Kenneth', 'Scott', '+984591936', 'skenneth@yahoo.com', DATE '1993-10-29', 5, 5, 5);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Dorothy', 'Watson', '+954747707', 'wdorothy@gmail.com', DATE '1995-01-14', 1, 1, 16);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Kevin', 'Davis', '+941113577', 'dkevin@outlook.com', DATE '1995-04-07', 3, 3, 12);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Carol', 'Parker', '+294725033', 'pcarol@outlook.com', DATE '1985-10-24', 1, 1, 3);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Brian', 'James', '+112641713', 'jbrian@mail.ru', DATE '1979-03-31', 5, 5, 19);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Amanda', 'Bennett', '+527871239', 'bamanda@outlook.com', DATE '1980-06-10', 4, 4, 4);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('George', 'Young', '+175900572', 'ygeorge@mail.ru', DATE '1981-10-31', 2, 2, 7);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Melissa', 'Phillips', '+454784443', 'pmelissa@mail.ru', DATE '1984-05-22', 5, 5, 15);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Edward', 'Richardson', '+800238540', 'redward@yahoo.com', DATE '1990-11-20', 6, 6, 17);
+INSERT INTO java_backend_course.public.students(name, surname, phone, email, birthdate, course_id, teacher_id, assignment_id) VALUES ('Deborah', 'Mitchell', '+574775806', 'mdeborah@gmail.com', DATE '1997-01-29', 6, 6, 1);
